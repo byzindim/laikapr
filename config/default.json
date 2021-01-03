@@ -1,0 +1,6 @@
+{
+    "port": 5000,
+    "jwtSecret": "byzin laikacolor",
+    "mongoUri": "mongodb+srv://byzin:dhl17qpt!@cluster0.5ilja.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "baseUrl": "http://localhost:5000"
+  }
