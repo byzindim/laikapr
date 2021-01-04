@@ -15,9 +15,15 @@ import Home from './pages/Home';
 import Rating from './pages/Rating';
 import Register from './pages/Register';
 import SwitchLanguage from './pages/SwitchLanguage';
+import Contact from './pages/Contact';
+import CopyRight from './pages/CopyRight';
+import PolicyWording from './pages/PolicyWording';
+import ArtHumans from './pages/ArtHuman';
+import DenisEchakov from './pages/Arts/DenisEchakov';
+
 class App extends Component {
   render() {
-    const { history } = this.props
+    const { history } = this.props;
 
     return (
       <div className="App">
@@ -30,6 +36,11 @@ class App extends Component {
           <Route history={history} path='/mensclub' component={Home} />
           <Route history={history} path='/register' component={Register} />
           <Route history={history} path='/switchlanguage' component={SwitchLanguage} />
+          <Route history={history} path='/policywording' component={PolicyWording} />
+          <Route history={history} path='/copyright' component={CopyRight} />
+          <Route history={history} path='/contact' component={Contact} />
+          <Route history={history} path='/arthuman' component={ArtHumans} />
+          <Route history={history} path='/denisechakov' component={DenisEchakov} />
           <Redirect from='/' to='/' />
         </BrowserRouter>
       </div>

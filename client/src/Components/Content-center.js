@@ -110,11 +110,11 @@ export default function ContentCenter() {
                 <Grid container className={classes.container_right} direction="row"
                     justifyContent="space-between"
                     alignItems="flex-start" item xs={6} sm={6}>
-                    <Grid className={classes.item} item xs={6} sm={6}>
-                        <Paper className={classes.paperSlider}>
-<Slider />
-                            
-                        </Paper>
+                    <Grid className={classes.paperSlider} item xs={6} sm={6}>
+                        {/* <Paper className={classes.paperSlider}> */}
+                        <Slider />
+
+                        {/* </Paper> */}
                     </Grid>
                 </Grid>
             </Container>

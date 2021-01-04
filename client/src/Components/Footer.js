@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { CardMedia, Container } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
+import { NavLink } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -51,23 +52,25 @@ export default function Footer() {
             <Container className={classes.content} >
                 <Grid container>
                     <Grid className={classes.item_logo} item xs={1.5} sm={1.5}>
-                        <CardMedia
+                        <NavLink to="/"><CardMedia
                             className={classes.media}
                             image="https://ia.wampi.ru/2020/12/26/logo-footer.png"
                             title="Laikacolor"
-                        />
+                        /></NavLink>
                     </Grid>
                     <Grid container direction="row" justify="center" alignItems="center"
                         item xs={4} sm={4}>
-                        <Typography className={classes.item_content} variant="h6" gutterBottom>
+                        <NavLink to="/policywording"><Typography className={classes.item_content} variant="h6" gutterBottom>
                             ПОЛИТИКА РЕДАКЦИИ
-                            </Typography>
-                        <Typography className={classes.item_content} variant="h6" gutterBottom>
+                            </Typography></NavLink>
+                        <NavLink to="/copyright"><Typography className={classes.item_content} variant="h6" gutterBottom>
                             АВТОРСКИЕ ПРАВА
-                            </Typography>
-                        <Typography className={classes.item_content} variant="h6" gutterBottom>
-                            КОНТАКТЫ
-                            </Typography>
+                            </Typography></NavLink>
+                        <Grid className={classes.item} item xs={1.5} sm={1.5}>
+                            <NavLink to="/contact"><Typography className={classes.item_content} variant="h6" gutterBottom>
+                                КОНТАКТ
+                            </Typography></NavLink>
+                        </Grid>
                     </Grid>
                     <Grid className={classes.item} item xs={3} sm={3}>
                         <Typography variant="h6" gutterBottom>

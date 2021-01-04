@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 
-function Rating() {
+function CopyRight() {
     return (
         <div>
             <Header />
@@ -10,4 +10,4 @@ function Rating() {
         </div>
     );
 }
-export default Rating;
+export default CopyRight;

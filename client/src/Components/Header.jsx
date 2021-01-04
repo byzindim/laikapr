@@ -26,9 +26,14 @@ const useStyles = makeStyles((theme) => ({
     item: {
         display: 'flex',
         justifyContent: 'center',
+        height: 'auto',
+        width: '100%',
+        // paddingTop: '100%',
+        maxWidth: '140px',
     },
     media: {
-        height: '0',
+        height: 'auto',
+        width: '100%',
         paddingTop: '100%',
         width: '140px',
         textAlign: 'center',
@@ -42,7 +47,7 @@ export default function Header() {
     return (
         <div className={classes.root}>
             <Container className={classes.content} >
-                <Grid container className={classes.content_header} spacing={2.625}>
+                <Grid container className={classes.content_header}>
                     <Grid className={classes.item} item xs={1.5} sm={1.5}>
                         <NavLink to="/"><CardMedia
                             className={classes.media}

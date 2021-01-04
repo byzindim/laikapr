@@ -32,7 +32,8 @@ const useStyles = makeStyles((theme) => ({
     media: {
         height: 0,
         paddingTop: '49%',
-        width: '1278px'
+        maxWidth: '1278px',
+        width: '100%',
     },
 }));
 export default function ContentBanner() {
