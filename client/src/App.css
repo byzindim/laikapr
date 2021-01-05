@@ -19,6 +19,17 @@
 #next{
   position: absolute;
 }
+#prev-art{
+  width: 30px;
+}
+#next-art{
+width: 30px;
+}
+#form-slider{
+  width: 800px;
+  height: 1000px;
+  border: 1px solid #000;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

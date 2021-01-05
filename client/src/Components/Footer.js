@@ -61,7 +61,7 @@ export default function Footer() {
                     <Grid container direction="row" justify="center" alignItems="center"
                         item xs={4} sm={4}>
                         <NavLink to="/policywording"><Typography className={classes.item_content} variant="h6" gutterBottom>
-                            ПОЛИТИКА РЕДАКЦИИ
+                            ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
                             </Typography></NavLink>
                         <NavLink to="/copyright"><Typography className={classes.item_content} variant="h6" gutterBottom>
                             АВТОРСКИЕ ПРАВА
